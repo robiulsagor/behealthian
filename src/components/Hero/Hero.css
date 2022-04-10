@@ -1,0 +1,112 @@
+.hero {
+    background: url(../../assets/imgs/web-background3\ 1.png);
+    background-size: cover;
+    height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.header-1 {
+    font-family: 'Gilroy-Bold';
+    font-size: 44px;
+    color: #333;
+}
+
+.header-1 span {
+    color: var(--main-color);
+}
+
+.para-1 {
+    font-family: 'Gilroy-Light';
+    font-size: 18px;
+    margin: 20px 0;
+    color: #aaa;
+}
+
+.para-2 {
+    font-family: 'Gilroy-Light';
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 24px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    /* height: 55px; */
+    background: #f2f2f2;
+    padding: 22px 14px;
+    border-radius: 20px;
+    animation: animate1 3s infinite;
+    cursor: pointer;
+}
+
+@keyframes animate1 {
+    0% {
+        bottom: -30px;
+    }
+
+    50% {
+        bottom: -40px;
+
+    }
+
+    100% {
+        bottom: -30px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .header-1 {
+        font-size: 30px !important;
+    }
+
+    .para-1 {
+        font-size: 16px !important;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .header-1 {
+        font-size: 35px !important;
+    }
+
+    .para-1 {
+        font-size: 17px !important;
+    }
+}
+
+/* for landscape */
+@media screen and (min-width: 360px) and (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: calc(100vh - 30px);
+    }
+
+    .section-header-wrapper {
+        max-width: 60%;
+    }
+
+    .header-1 {
+        font-size: 36px !important;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .header-1 {
+        font-size: 38px !important;
+    }
+
+    .para-1 {
+        font-size: 18px !important;
+    }
+
+}

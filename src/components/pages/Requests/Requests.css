@@ -1,0 +1,105 @@
+.contactFormContainer {
+    width: 60%;
+}
+
+.contactForm {
+    margin-bottom: 20px;
+}
+
+.contactForm .input-group {
+    margin-bottom: 20px;
+}
+
+.contactForm label {
+    margin: 0;
+    padding: 5px 0;
+    color: #444;
+    font-size: 18px;
+}
+
+.contactForm select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+}
+
+.contactForm select:focus, input:focus {
+    border: 1px solid rgba(40, 152, 200, 0.6);
+}
+
+
+.contactForm .inputDetails {
+    font-size: 16px;
+    color: #444;
+    display: block;
+    margin: 5px 0;
+}
+
+.contactForm .inputFile {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed saddlebrown;
+    cursor: pointer;
+}
+
+.contactForm .inputFile p {
+    margin: 0;
+}
+
+.contactForm .submit {
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    width: 120px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Gilroy-Medium', serif;
+    margin: 10px 0;
+}
+
+.contactForm .submit:hover {
+    background: #7166d8c1;
+}
+
+.fileInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 18px;
+}
+
+.fileInfoContainer .fileName {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.fileInfoContainer .omitBtn {
+    border: 1px solid rgb(151, 6, 6);
+    padding: 2px 7px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .contactFormContainer {
+        width: 90%;
+    }
+
+    .contactForm .inputFile {
+        height: 100px;
+    }
+}

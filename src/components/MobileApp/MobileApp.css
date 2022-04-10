@@ -1,0 +1,19 @@
+
+
+
+.app-subhead {
+    font-family: 'Gilroy-Regular';
+    margin-top: 15px;
+    color: gray;
+    line-height: 25px;
+    letter-spacing: 1.1px;
+}
+
+@media screen and (max-width: 426px) {
+    
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+}

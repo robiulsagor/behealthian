@@ -1,0 +1,82 @@
+.wholePage {
+    background: #cfc9f0;
+}
+
+.pageHolder {
+    min-height: 60vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pageContainer {
+    padding: 20px;
+}
+
+.pageHeaderContainer {
+    /* background: rgba(164, 157, 157, 0.269); */
+    text-align: center;
+}
+
+.pageHeader {
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 80px;
+    margin-top: 30px;
+    color: #444;
+    position: relative;
+    display: inline-block;
+}
+
+.pageHeader::before, .pageHeader::after {
+    content: '';
+    position: absolute;
+    background: rgba(104, 104, 104, 0.466);
+    height: 3px;
+    width: 30px;
+    top: 50%;
+}
+
+.pageHeader::before {
+    left: -30%;
+}
+
+.pageHeader::after {
+    right: -30%;
+}
+
+.pageContainer h4 {
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 8px;
+    margin-top: 10px;
+    color: #444;
+    position: relative
+}
+
+.pageContainer p {
+    margin-bottom: 50px;
+    font-family: 'Gilroy-Regular';
+    color: #444;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    /* * {
+        scroll-padding-top: 70px;
+    } */
+
+    .careHolder {
+        margin-top: 50px;
+    }
+
+    .pageHolder {
+        padding-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .pageHolder {
+        width: 98%;
+    }
+}

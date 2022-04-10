@@ -1,0 +1,58 @@
+.card-container {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    width: 21%;
+    text-align: center;
+    padding: 45px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgb(245, 245, 245);
+    height: 250px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card h3 {
+    font-family: 'Gilroy-Bold';
+    margin: 10px 0;
+}
+
+.card p {
+    font-family: 'Gilroy-Regular';
+    color: #828282;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 45px 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 786px) {
+    .card {
+        width: 45%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 786px) and (max-width: 1012px) {
+    .card {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,55 @@
+.contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.contactCard {
+    box-shadow: 0 0 10px rgb(168, 167, 167);
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0 !important;
+    background: rgb(227, 225, 225);
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+    height: 200px;
+}
+
+.contactCard:hover {
+    background: rgb(255, 255, 255);
+}
+
+.contactCard img {
+    width: 64px;
+    border-radius: 6px;
+}
+
+.contactCard p {
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .contactContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactContainer {
+        /* grid-template-columns: 1fr 1fr; */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .contactContainer {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}

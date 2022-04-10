@@ -1,0 +1,18 @@
+.thankyouText {
+    text-align: center;
+    font-family: 'Gilroy-Bold', serif;
+    font-size: 27px;
+    color: #555;
+}
+
+@media screen and (max-width: 1067px) {
+    .thankyouText {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .thankyouText {
+        font-size: 16px;
+    }
+}
